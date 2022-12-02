@@ -1,0 +1,63 @@
+html, body {
+	background-color: rgb(34, 47, 62);
+}
+
+h1 {
+	text-align: center;
+}
+
+.select-box {
+	background-color: rgb(24, 37, 52);
+	font-size: .8em;
+	font-weight: bolder;
+	padding-bottom: 3vh;
+	padding-top: 3vh;
+	width: 60%;
+	border-radius: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	color: #FFFFFF;
+	text-align: center;
+	margin-top: 40vh;
+}
+
+.select-button {
+	display: block;
+	margin-top: 5vh;
+	margin-left: auto;
+	margin-right: auto;
+	border: none;
+	border-radius: 10px;
+	height: 7vh;
+	width: 25vw;
+	font-size: .8em;
+	background-color: #54a0ff;
+	color: #FFFFFF;
+}
+.select-button:hover {
+	background-color: #2e86de;
+}
+.select-button:active {
+	background-color: rgb(40, 40, 40);
+}
+
+.go-button {
+	display: block;
+	margin-top: 2vh;
+	margin-left: auto;
+	margin-right: auto;
+	border: none;
+	border-radius: 10px;
+	height: 6vh;
+	width: 18vw;
+	font-size: .8em;
+	background-color: #1dd1a1;
+	color: #FFFFFF;
+}
+
+.go-button:hover {
+	background-color: #10ac84;
+}
+.go-button:active {
+	background-color: rgb(40, 40, 40);
+}

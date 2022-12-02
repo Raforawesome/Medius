@@ -7,3 +7,5 @@ edition = "2021"
 
 [dependencies]
 dioxus = { version = "0.2.4", features = ["desktop", "router"] }
+dirs = "4.0.0"
+rfd = "0.10.0"
