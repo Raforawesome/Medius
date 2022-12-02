@@ -1,4 +1,5 @@
 mod app;
+mod components;
 use dioxus::desktop::tao::dpi::LogicalSize;
 //use dioxus::prelude::*;
 
