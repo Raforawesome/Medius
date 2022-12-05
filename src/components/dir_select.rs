@@ -2,15 +2,30 @@ use dioxus::prelude::*;
 
 pub fn default(cx: Scope) -> Element {
     let selected = use_state(&cx, || "".to_string());
+    let folder_open_svg: &'static str = include_str!("../assets/svg/folder_open.svg");
+
     rsx!(cx,
         style { [include_str!("../assets/css/dir_select.css")] }
-        p {
+        table {
             class: "select-box",
-            [if selected.get() != "" {
-                selected.get()
-            } else {
-                "Select a directory"
-            }]
+            tr {
+                td {
+                    dangerous_inner_html: "{folder_open_svg}",
+                }
+                td {
+                    p {
+                        class: "select-text",
+                        [if selected.get() != "" {
+                            selected.get()
+                        } else {
+                            "Select a directory"
+                        }]
+                    }
+                }
+                td {
+                    dangerous_inner_html: "{folder_open_svg}",
+                }
+            }
         }
         button {
             class: "select-button",
